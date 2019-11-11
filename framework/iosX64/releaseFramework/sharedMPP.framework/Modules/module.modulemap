@@ -1,0 +1,6 @@
+framework module sharedMPP {
+    umbrella header "sharedMPP.h"
+
+    export *
+    module * { export * }
+}
