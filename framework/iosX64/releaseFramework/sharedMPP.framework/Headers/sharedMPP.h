@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class SMPPKotlinThrowable, SMPPCoroutineScopePresenter, SMPPKotlinAbstractCoroutineContextElement, SMPPKotlinx_coroutines_coreCoroutineDispatcher, SMPPKotlinArray, SMPPCountry, SMPPLanguages, SMPPCountryList, SMPPKotlinx_coroutines_coreCancellationException, SMPPKtor_client_coreHttpClient, SMPPKtor_client_coreHttpClientEngineConfig, SMPPKotlinx_serialization_runtimeEnumDescriptor, SMPPKotlinx_serialization_runtimeSerialKind, SMPPKotlinNothing, SMPPKotlinx_serialization_runtimeUpdateMode, SMPPKotlinException, SMPPKotlinRuntimeException, SMPPKotlinIllegalStateException, SMPPKtor_client_coreHttpClientConfig, SMPPKtor_client_coreHttpReceivePipeline, SMPPKtor_client_coreHttpRequestPipeline, SMPPKtor_client_coreHttpResponsePipeline, SMPPKtor_client_coreHttpSendPipeline, SMPPKtor_client_coreHttpResponseConfig, SMPPKotlinx_serialization_runtimeSerialClassDescImpl, SMPPKotlinEnum, SMPPKotlinx_coroutines_coreAtomicDesc, SMPPKtor_utilsAttributeKey, SMPPKtor_utilsPipelinePhase, SMPPKtor_utilsPipeline, SMPPKotlinx_ioCharset, SMPPKotlinx_coroutines_coreAtomicOp, SMPPKotlinx_ioCharsetDecoder, SMPPKotlinx_ioCharsetEncoder, SMPPKotlinx_coroutines_coreOpDescriptor;
+@class SMPPKotlinThrowable, SMPPCoroutineScopePresenter, SMPPKotlinAbstractCoroutineContextElement, SMPPKotlinx_coroutines_coreCoroutineDispatcher, SMPPKotlinArray, SMPPCountry, SMPPCountryList, SMPPKotlinx_coroutines_coreCancellationException, SMPPKtor_client_coreHttpClient, SMPPKtor_client_coreHttpClientEngineConfig, SMPPKotlinx_serialization_runtimeEnumDescriptor, SMPPKotlinx_serialization_runtimeSerialKind, SMPPKotlinNothing, SMPPKotlinx_serialization_runtimeUpdateMode, SMPPKotlinException, SMPPKotlinRuntimeException, SMPPKotlinIllegalStateException, SMPPKtor_client_coreHttpClientConfig, SMPPKtor_client_coreHttpReceivePipeline, SMPPKtor_client_coreHttpRequestPipeline, SMPPKtor_client_coreHttpResponsePipeline, SMPPKtor_client_coreHttpSendPipeline, SMPPKtor_client_coreHttpResponseConfig, SMPPKotlinx_serialization_runtimeSerialClassDescImpl, SMPPKotlinEnum, SMPPKotlinx_coroutines_coreAtomicDesc, SMPPKtor_utilsAttributeKey, SMPPKtor_utilsPipelinePhase, SMPPKtor_utilsPipeline, SMPPKotlinx_ioCharset, SMPPKotlinx_coroutines_coreAtomicOp, SMPPKotlinx_ioCharsetDecoder, SMPPKotlinx_ioCharsetEncoder, SMPPKotlinx_coroutines_coreOpDescriptor;
 
-@protocol SMPPKotlinCoroutineContext, SMPPKotlinx_coroutines_coreCoroutineScope, SMPPBaseView, SMPPUiUpdate, SMPPKotlinx_coroutines_coreJob, SMPPKtor_client_coreHttpClientEngine, SMPPKotlinCoroutineContextKey, SMPPKotlinCoroutineContextElement, SMPPKotlinContinuation, SMPPKotlinContinuationInterceptor, SMPPKotlinx_coroutines_coreRunnable, SMPPKotlinx_coroutines_coreDisposableHandle, SMPPKotlinx_coroutines_coreCancellableContinuation, SMPPKotlinx_coroutines_coreDelay, SMPPKotlinx_serialization_runtimeKSerializer, SMPPKotlinx_serialization_runtimeEncoder, SMPPKotlinx_serialization_runtimeSerialDescriptor, SMPPKotlinx_serialization_runtimeSerializationStrategy, SMPPKotlinx_serialization_runtimeDecoder, SMPPKotlinx_serialization_runtimeDeserializationStrategy, SMPPKotlinx_coroutines_coreChildHandle, SMPPKotlinx_coroutines_coreChildJob, SMPPKotlinSequence, SMPPKotlinx_coroutines_coreSelectClause0, SMPPKotlinx_ioCloseable, SMPPKotlinIterator, SMPPKotlinx_serialization_runtimeCompositeEncoder, SMPPKotlinx_serialization_runtimeSerialModule, SMPPKotlinAnnotation, SMPPKotlinx_serialization_runtimeCompositeDecoder, SMPPKotlinx_coroutines_coreParentJob, SMPPKotlinx_coroutines_coreSelectInstance, SMPPKotlinSuspendFunction0, SMPPKtor_utilsAttributes, SMPPKotlinx_serialization_runtimeGeneratedSerializer, SMPPKotlinx_serialization_runtimeSerialModuleCollector, SMPPKotlinKClass, SMPPKotlinComparable, SMPPKotlinSuspendFunction, SMPPKtor_client_coreHttpClientFeature, SMPPKotlinSuspendFunction2, SMPPKotlinKDeclarationContainer, SMPPKotlinKAnnotatedElement, SMPPKotlinKClassifier;
+@protocol SMPPKotlinCoroutineContext, SMPPKotlinx_coroutines_coreCoroutineScope, SMPPBaseView, SMPPUICallback, SMPPKotlinx_coroutines_coreJob, SMPPKtor_client_coreHttpClientEngine, SMPPKotlinCoroutineContextKey, SMPPKotlinCoroutineContextElement, SMPPKotlinContinuation, SMPPKotlinContinuationInterceptor, SMPPKotlinx_coroutines_coreRunnable, SMPPKotlinx_coroutines_coreDisposableHandle, SMPPKotlinx_coroutines_coreCancellableContinuation, SMPPKotlinx_coroutines_coreDelay, SMPPKotlinx_serialization_runtimeEncoder, SMPPKotlinx_serialization_runtimeSerialDescriptor, SMPPKotlinx_serialization_runtimeSerializationStrategy, SMPPKotlinx_serialization_runtimeDecoder, SMPPKotlinx_serialization_runtimeDeserializationStrategy, SMPPKotlinx_serialization_runtimeKSerializer, SMPPKotlinx_coroutines_coreChildHandle, SMPPKotlinx_coroutines_coreChildJob, SMPPKotlinSequence, SMPPKotlinx_coroutines_coreSelectClause0, SMPPKotlinx_ioCloseable, SMPPKotlinIterator, SMPPKotlinx_serialization_runtimeCompositeEncoder, SMPPKotlinx_serialization_runtimeSerialModule, SMPPKotlinAnnotation, SMPPKotlinx_serialization_runtimeCompositeDecoder, SMPPKotlinx_coroutines_coreParentJob, SMPPKotlinx_coroutines_coreSelectInstance, SMPPKotlinSuspendFunction0, SMPPKtor_utilsAttributes, SMPPKotlinx_serialization_runtimeGeneratedSerializer, SMPPKotlinx_serialization_runtimeSerialModuleCollector, SMPPKotlinKClass, SMPPKotlinComparable, SMPPKotlinSuspendFunction, SMPPKtor_client_coreHttpClientFeature, SMPPKotlinSuspendFunction2, SMPPKotlinKDeclarationContainer, SMPPKotlinKAnnotatedElement, SMPPKotlinKClassifier;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -172,11 +172,13 @@ __attribute__((swift_name("CoroutineScopePresenter")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CountryPresenter")))
 @interface SMPPCountryPresenter : SMPPCoroutineScopePresenter
-- (instancetype)initWithContext:(id<SMPPKotlinCoroutineContext>)context uiUpdate:(id<SMPPUiUpdate>)uiUpdate __attribute__((swift_name("init(context:uiUpdate:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithContext:(id<SMPPKotlinCoroutineContext>)context uiCallback:(id<SMPPUICallback>)uiCallback __attribute__((swift_name("init(context:uiCallback:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithMainContext:(id<SMPPKotlinCoroutineContext>)mainContext baseView:(id<SMPPBaseView>)baseView __attribute__((swift_name("init(mainContext:baseView:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 - (id<SMPPKotlinx_coroutines_coreJob>)getCountryListRegionName:(NSString *)regionName __attribute__((swift_name("getCountryList(regionName:)")));
 - (id<SMPPKotlinx_coroutines_coreJob>)getCountryDetailCountryName:(NSString *)countryName __attribute__((swift_name("getCountryDetail(countryName:)")));
-@property (readonly) id<SMPPUiUpdate> uiUpdate __attribute__((swift_name("uiUpdate")));
+- (id<SMPPKotlinx_coroutines_coreJob>)getCountryListFromJsonRegionName:(NSString *)regionName __attribute__((swift_name("getCountryListFromJson(regionName:)")));
+- (id<SMPPKotlinx_coroutines_coreJob>)getCountryDetailFromJsonCountryName:(NSString *)countryName __attribute__((swift_name("getCountryDetailFromJson(countryName:)")));
+@property (readonly) id<SMPPUICallback> uiCallback __attribute__((swift_name("uiCallback")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -260,22 +262,6 @@ __attribute__((swift_name("UIDelay")))
 - (void)dispatchContext:(id<SMPPKotlinCoroutineContext>)context block:(id<SMPPKotlinx_coroutines_coreRunnable>)block __attribute__((swift_name("dispatch(context:block:)")));
 - (void)scheduleResumeAfterDelayTimeMillis:(int64_t)timeMillis continuation:(id<SMPPKotlinx_coroutines_coreCancellableContinuation>)continuation __attribute__((swift_name("scheduleResumeAfterDelay(timeMillis:continuation:)")));
 - (id<SMPPKotlinx_coroutines_coreDisposableHandle>)invokeOnTimeoutTimeMillis:(int64_t)timeMillis block:(id<SMPPKotlinx_coroutines_coreRunnable>)block __attribute__((swift_name("invokeOnTimeout(timeMillis:block:)")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Countries")))
-@interface SMPPCountries : KotlinBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Countries.Companion")))
-@interface SMPPCountriesCompanion : KotlinBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-- (id<SMPPKotlinx_serialization_runtimeKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -370,37 +356,6 @@ __attribute__((swift_name("Country.Companion")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("CountryDetail")))
-@interface SMPPCountryDetail : KotlinBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Languages")))
-@interface SMPPLanguages : KotlinBase
-- (instancetype)initWithName:(NSString *)name nativeName:(NSString *)nativeName __attribute__((swift_name("init(name:nativeName:)"))) __attribute__((objc_designated_initializer));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-- (SMPPLanguages *)doCopyName:(NSString *)name nativeName:(NSString *)nativeName __attribute__((swift_name("doCopy(name:nativeName:)")));
-@end;
-
-__attribute__((swift_name("UiUpdate")))
-@protocol SMPPUiUpdate <SMPPBaseView>
-@required
-- (void)countryListResponseCountryList:(NSArray<SMPPCountry *> *)countryList __attribute__((swift_name("countryListResponse(countryList:)")));
-- (void)countryDetailResponseCountryDetail:(SMPPCountry *)countryDetail __attribute__((swift_name("countryDetailResponse(countryDetail:)")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("CountryListViewModel")))
-@interface SMPPCountryListViewModel : KotlinBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CountryService")))
 @interface SMPPCountryService : KotlinBase
 - (instancetype)initWithHttpClientEngine:(id<SMPPKtor_client_coreHttpClientEngine>)httpClientEngine __attribute__((swift_name("init(httpClientEngine:)"))) __attribute__((objc_designated_initializer));
@@ -416,15 +371,11 @@ __attribute__((swift_name("CountryService.Companion")))
 @property (readonly) NSString *REGION_ALL __attribute__((swift_name("REGION_ALL")));
 @end;
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("MainLoopDispatcher")))
-@interface SMPPMainLoopDispatcher : SMPPKotlinx_coroutines_coreCoroutineDispatcher
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)mainLoopDispatcher __attribute__((swift_name("init()")));
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-+ (instancetype)new __attribute__((unavailable));
-- (void)dispatchContext:(id<SMPPKotlinCoroutineContext>)context block:(id<SMPPKotlinx_coroutines_coreRunnable>)block __attribute__((swift_name("dispatch(context:block:)")));
+__attribute__((swift_name("UICallback")))
+@protocol SMPPUICallback <SMPPBaseView>
+@required
+- (void)countryListResponseCountryList:(NSArray<SMPPCountry *> *)countryList __attribute__((swift_name("countryListResponse(countryList:)")));
+- (void)countryDetailResponseCountryDetail:(SMPPCountry *)countryDetail __attribute__((swift_name("countryDetailResponse(countryDetail:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -446,13 +397,6 @@ __attribute__((swift_name("CountryList.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 - (id<SMPPKotlinx_serialization_runtimeKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("DefaultDispatcherKt")))
-@interface SMPPDefaultDispatcherKt : KotlinBase
-@property (class, readonly) id<SMPPKotlinCoroutineContext> defaultDispatcher __attribute__((swift_name("defaultDispatcher")));
-@property (class, readonly) id<SMPPKotlinCoroutineContext> uiDispatcher __attribute__((swift_name("uiDispatcher")));
 @end;
 
 __attribute__((swift_name("KotlinThrowable")))

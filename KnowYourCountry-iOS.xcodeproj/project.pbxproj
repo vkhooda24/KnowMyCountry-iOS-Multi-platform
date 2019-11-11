@@ -12,8 +12,8 @@
 		FA08D59C2377D7EE008AF59C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA08D59B2377D7EE008AF59C /* Assets.xcassets */; };
 		FA08D59F2377D7EE008AF59C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA08D59D2377D7EE008AF59C /* LaunchScreen.storyboard */; };
 		FA08D5A72377DC89008AF59C /* CountryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08D5A62377DC89008AF59C /* CountryTableViewController.swift */; };
-		FA08D5E323790956008AF59C /* sharedMPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA08D5E223790956008AF59C /* sharedMPP.framework */; };
-		FA08D5E423790956008AF59C /* sharedMPP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA08D5E223790956008AF59C /* sharedMPP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAE65AD32379F78E00E0A00C /* sharedMPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE65AD22379F78E00E0A00C /* sharedMPP.framework */; };
+		FAE65AD42379F78E00E0A00C /* sharedMPP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAE65AD22379F78E00E0A00C /* sharedMPP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FA08D5E423790956008AF59C /* sharedMPP.framework in Embed Frameworks */,
+				FAE65AD42379F78E00E0A00C /* sharedMPP.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +38,7 @@
 		FA08D59E2377D7EE008AF59C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA08D5A02377D7EE008AF59C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA08D5A62377DC89008AF59C /* CountryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewController.swift; sourceTree = "<group>"; };
-		FA08D5E223790956008AF59C /* sharedMPP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sharedMPP.framework; path = "../../codespace_kotlin/KnowyourCountry-MPP/shared/build/bin/iosX64/debugFramework/sharedMPP.framework"; sourceTree = "<group>"; };
+		FAE65AD22379F78E00E0A00C /* sharedMPP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sharedMPP.framework; path = "../../codespace_kotlin/KnowyourCountry-MPP/shared/build/bin/iosX64/debugFramework/sharedMPP.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA08D5E323790956008AF59C /* sharedMPP.framework in Frameworks */,
+				FAE65AD32379F78E00E0A00C /* sharedMPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		FA08D5882377D7EC008AF59C = {
 			isa = PBXGroup;
 			children = (
-				FA08D5E223790956008AF59C /* sharedMPP.framework */,
+				FAE65AD22379F78E00E0A00C /* sharedMPP.framework */,
 				FA08D5932377D7EC008AF59C /* KnowYourCountry-iOS */,
 				FA08D5922377D7EC008AF59C /* Products */,
 			);
