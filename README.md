@@ -1,3 +1,3 @@
 # KnowMyCountry-iOS-Multi-platform
 
-KnowMyCountry-iOS project use multi-platform framework. 
+KnowMyCountry-iOS project uses multi-platform framework. 
