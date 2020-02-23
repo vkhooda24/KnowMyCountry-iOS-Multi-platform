@@ -15,6 +15,7 @@
 		FA14C7B224022363000B795D /* RegionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14C7B124022363000B795D /* RegionSelectionViewController.swift */; };
 		FA9CB5FE23FAE58200F2DB92 /* xrossPlateform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1B423023EFE022002F1D1B /* xrossPlateform.framework */; };
 		FA9CB5FF23FAE58200F2DB92 /* xrossPlateform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA1B423023EFE022002F1D1B /* xrossPlateform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FABC304124023BD20023995F /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC304024023BD20023995F /* CountryDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,7 @@
 		FA14C7B124022363000B795D /* RegionSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionSelectionViewController.swift; sourceTree = "<group>"; };
 		FA1B420523EFBC21002F1D1B /* debugFramework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = debugFramework; path = ../../../Downloads/debugFramework; sourceTree = "<group>"; };
 		FA1B423023EFE022002F1D1B /* xrossPlateform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = xrossPlateform.framework; path = ../../../Downloads/debugFramework/xrossPlateform.framework; sourceTree = "<group>"; };
+		FABC304024023BD20023995F /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				FA08D59D2377D7EE008AF59C /* LaunchScreen.storyboard */,
 				FA08D5A02377D7EE008AF59C /* Info.plist */,
 				FA08D5A62377DC89008AF59C /* CountryTableViewController.swift */,
+				FABC304024023BD20023995F /* CountryDetailsViewController.swift */,
 			);
 			path = "KnowYourCountry-iOS";
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				FA08D5A72377DC89008AF59C /* CountryTableViewController.swift in Sources */,
 				FA14C7B224022363000B795D /* RegionSelectionViewController.swift in Sources */,
+				FABC304124023BD20023995F /* CountryDetailsViewController.swift in Sources */,
 				FA08D5952377D7EC008AF59C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,7 @@ class CountryTableViewController: UITableViewController, UICallback {
     
     var countriesList: [Country] = []
     var regionName = ""
+    var countrySelected = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,10 +46,19 @@ class CountryTableViewController: UITableViewController, UICallback {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "LableCell", for: indexPath)
         
-        cell.textLabel?.textColor = UIColor.red
         cell.textLabel?.text = countriesList[indexPath.row].name
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        countrySelected = countriesList[indexPath.row].name!
+        performSegue(withIdentifier: "countrydetailsviewcontrollersegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         let vc = segue.destination as! CountryDetailsViewController
+         vc.countrySelected = countrySelected
     }
     
     //Multi-platform shared code callback(UICallback)
