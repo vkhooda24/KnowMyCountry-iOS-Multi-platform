@@ -9,7 +9,7 @@
 import UIKit
 import xrossPlateform
 
-class CountryDetailsViewController: UIViewController, UICallback {
+class CountryDetailsViewController: UIViewController, CountryDetailsResponseListener {
     
     var countrySelected = ""
     
@@ -27,34 +27,37 @@ class CountryDetailsViewController: UIViewController, UICallback {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.showLoadingView(onView: self.view)
+        
         self.title = countrySelected + "\'s details"
         
-        CountryPresenter(context: UI(), uiCallback: self).getCountryDetail(countryName: countrySelected)
-    }
-    
-    func countryListResponse(countryList: [Country]) {
-        print(countryList)
+        CountryDetailsPresenter(context: UI(), countryDetailsResponseListener: self).fetchCountryDetails(countryName: countrySelected)
     }
     
     func countryDetailResponse(countryDetail: Country) {
-            capitalName.text = "Capital name: " + countryDetail.capital!
-            nativeName.text = "Native name: " + countryDetail.nativeName!
+        
+        self.removeLoadingView()
+    
+        capitalName.text = "Capital name: " + countryDetail.capital!
+        nativeName.text = "Native name: " + countryDetail.nativeName!
 //            if let domain = countryDetail.topLevelDomain[0]! as [String: Any] {
 //                domainName.text = "Domain name: " + domain
 //            }
-            regionName.text = "Region name: " + countryDetail.region!
-            subRegionName.text = "Sub region name: " + countryDetail.subregion!
+        regionName.text = "Region name: " + countryDetail.region!
+        subRegionName.text = "Sub region name: " + countryDetail.subregion!
 //            timezone.text = "Timezon: " + countryDetail.timezones[0]
-            population.text = "Population: " + countryDetail.population!
-            alphaCodeName.text = "Alpha code name: " + countryDetail.alpha2Code!
-        
+        population.text = "Population: " + countryDetail.population!
+        alphaCodeName.text = "Alpha code name: " + countryDetail.alpha2Code!
+    
 //            var imageURL = URL(fileReferenceLiteralResourceName: countryDetail.flag!)
 //
 //            flagImage.load(url: imageURL)
     }
     
     func showError(error: KotlinThrowable) {
-         print(error)
+        self.removeLoadingView()
+        print(error)
     }
 }
 

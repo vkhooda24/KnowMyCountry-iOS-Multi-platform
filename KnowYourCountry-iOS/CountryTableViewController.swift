@@ -9,7 +9,7 @@
 import UIKit
 import xrossPlateform
 
-class CountryTableViewController: UITableViewController, UICallback {
+class CountryTableViewController: UITableViewController, CountriesListResponseListener {
     
     var countriesList: [Country] = []
     var regionName = ""
@@ -18,9 +18,10 @@ class CountryTableViewController: UITableViewController, UICallback {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        CountryPresenter(context: UI(), uiCallback: self).getCountryList(regionName: regionName)
-//        CountryPresenter(context: UI(), uiCallback: self).getCountryDetail(countryName: "India")
-        
+        self.showLoadingView(onView: self.view)
+    
+        CountriesListPresenter(context: UI(), countriesListResponseListener: self).fetchCountiesList(regionName: regionName)
+
         tableView.dataSource = self
     }
     
@@ -61,18 +62,17 @@ class CountryTableViewController: UITableViewController, UICallback {
          vc.countrySelected = countrySelected
     }
     
-    //Multi-platform shared code callback(UICallback)
-    func countryListResponse(countryList: [Country]) {
+    //Multi-platform shared code callback
+    func countriesListResponse(countriesList: [Country]) {
+        
+        self.removeLoadingView()
        // print(countryList)
-        countriesList = countryList
+        self.countriesList = countriesList
         tableView.reloadData()
     }
     
-    func countryDetailResponse(countryDetail: Country) {
-        print(countryDetail)
-    }
-    
     func showError(error: KotlinThrowable) {
+        self.removeLoadingView()
         print(error)
     }
 }
