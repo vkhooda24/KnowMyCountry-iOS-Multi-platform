@@ -7,22 +7,20 @@
 //
 
 import UIKit
-import sharedMPP
+import xrossPlateform
 
-class CountryTableViewController: UITableViewController, UICallback {
+class CountryTableViewController: UITableViewController, CountriesListResponseListener {
     
     var countriesList: [Country] = []
+    var regionName = ""
+    var countrySelected = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Data from server call
-//        CountryPresenter(context: UI(), uiCallback: self).getCountryList(regionName: "Oceania")
-//        CountryPresenter(context: UIBlocker(), uiCallback: self).getCountryDetail(countryName: "India")
-        
-        //Data from Json
-        CountryPresenter(context: UIBlocker(), uiCallback: self).getCountryListFromJson(regionName: "Oceania")
-//        CountryPresenter(context: UIBlocker(), uiCallback: self).getCountryDetailFromJson(countryName: "India")
+        self.showLoadingView(onView: self.view)
+    
+        CountriesListPresenter(context: UI(), countriesListResponseListener: self).fetchCountiesList(regionName: regionName)
 
         tableView.dataSource = self
     }
@@ -34,30 +32,47 @@ class CountryTableViewController: UITableViewController, UICallback {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        //need to refactor to avoid looping on title
+        if(regionName.elementsEqual("All")) {
+            self.title = "All countries, Total: " + String(countriesList.count)
+        } else {
+            self.title = regionName + " Region\'s countries, Total: " + String(countriesList.count)
+        }
+        
         return countriesList.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "LableCell", for: indexPath)
-
-        cell.textLabel?.textColor = UIColor.red
+        
         cell.textLabel?.text = countriesList[indexPath.row].name
 
         return cell
     }
     
-    //Multi-platform shared code callback(UICallback)
-    func countryListResponse(countryList: [Country]) {
-        print(countryList)
-        countriesList = countryList
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        countrySelected = countriesList[indexPath.row].name!
+        performSegue(withIdentifier: "countrydetailsviewcontrollersegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         let vc = segue.destination as! CountryDetailsViewController
+         vc.countrySelected = countrySelected
+    }
+    
+    //Multi-platform shared code callback
+    func countriesListResponse(countriesList: [Country]) {
+        
+        self.removeLoadingView()
+       // print(countryList)
+        self.countriesList = countriesList
         tableView.reloadData()
     }
     
-    func countryDetailResponse(countryDetail: Country) {
-        print(countryDetail)
-    }
-    
     func showError(error: KotlinThrowable) {
+        self.removeLoadingView()
         print(error)
     }
 }
